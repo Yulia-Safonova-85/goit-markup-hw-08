@@ -1,0 +1,27 @@
+.title-visual-foto {
+    display: flex;
+    gap: 30px;
+}
+
+.title-visual-foto__list {
+    flex-basis: calc((100% - 60px)/3);
+
+}
+
+.title-visual-foto__about {
+    position: relative;
+}
+
+.title-visual-foto__overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    @extend %display;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--primary-background-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 27px;
+    padding-bottom: 27px;
+}

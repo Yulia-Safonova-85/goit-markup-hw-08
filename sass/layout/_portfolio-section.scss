@@ -1,0 +1,58 @@
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.menu-icon {
+    flex-basis: calc((100% - 60px)/3);
+
+    background: var(--primary-background-color);
+}
+
+.menu-icon-link {
+    display: block;
+
+    transition: box-shadow var(--transition-duration-func);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+.about-icon {
+    padding: 20px 24px;
+
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.icon-link-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+    padding: 63px 24px;
+    line-height: 1.5;
+    transform: translateY(100%);
+
+    transition: transform var(--transition-duration-func);
+
+    .menu-icon-link:hover &,
+    .menu-icon-link:focus & {
+        transform: translateY(0%);
+        }
+}

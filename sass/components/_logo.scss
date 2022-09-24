@@ -1,0 +1,29 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--primary-text-color);
+    font-family: $fontLogo;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo--site-nav {
+margin-right: 90px;
+}
+
+.logo__color {
+    color: var(--accent-color);
+}
+.logo--footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.logo__second-footer {
+    color: var(--primary-background-color);
+}

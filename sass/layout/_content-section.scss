@@ -1,0 +1,37 @@
+.client {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-list {
+    flex-basis: calc((100% - 150px)/6);
+}
+
+.client-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    transition: border-color var(--transition-duration-func);
+
+    &:hover,
+    &:focus {
+        border-color: rgba(33, 150, 243, 1);
+        }
+}
+
+.client-logo {
+    fill: #AFB1B8;
+
+    transition: fill var(--transition-duration-func);
+
+    .client-list-link:hover &,
+    .client-list-link:focus & {
+        fill: var(--accent-color);
+    }
+}
