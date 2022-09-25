@@ -1,21 +1,22 @@
-.site-nav {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     color: var(--primary-text-color);
     font-family: $fontLogo;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 }
-
+@media screen and (min-width: 768px) {
 .logo--site-nav {
-margin-right: 90px;
+    margin-right: 90px;
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    .logo { font-size: 26px;
+        line-height: 1.19;
+}
+}
 .logo__color {
     color: var(--accent-color);
 }
