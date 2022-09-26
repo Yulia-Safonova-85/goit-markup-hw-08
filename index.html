@@ -66,7 +66,8 @@
             <li><a href="./portfolio.html" class="nav-list__link">Портфоліо</a></li>
             <li><a href="" class="nav-list__link">Контакти</a></li>
           </ul>
-          <ul class="contacts">
+          <Div class="mobile-menu-contact">
+          <ul class="contacts mobile-menu__contacts">
           <li class="contacts__list">
             <a class="contacts__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a>
@@ -76,33 +77,34 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
-        <ul class="social-list footer-social-list">
+        <ul class="social-list">
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__social-list__link_backgroud_dark">
+              <a href="" class="social-list__link">
                 Instagram
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__social-list__link_backgroud_dark">
+              <a href="" class="social-list__link">
                 Twitter
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__social-list__link_backgroud_dark">
+              <a href="" class="social-list__link">
                Facebook
               </a>
             </li>
             <li class="social-list__item">
-              <a href="" class="social-list__link social-list__social-list__link_backgroud_dark">
+              <a href="" class="social-list__link">
                 LinkedIn
               </a>
             </li>
           </ul>
+          </Div>
         </div>
       </div>
     </header>
     <main>
-      <!-- <section class="hero-section fons-hero-section">
+      <section class="hero-section fons-hero-section">
         <div class="container hero-section-container">
           <h1 class="head-hero">
             Ефективні рішення для <br />
@@ -169,13 +171,14 @@
           <ul class="title-visual-foto">
             <li class="title-visual-foto__list">
               <div class="title-visual-foto__about">
-                <img src="./images/img-box-1.jpg" alt="кодування проекту на лептопі" width="370" />
+                <img srcset="./images/img-box-1@2x.jpg"
+                src="./images/img-box-1.jpg" alt="кодування проекту на лептопі" width="370" />
                 <p class="title-visual-foto__overlay">Десктопні додатки</p>
               </div>
             </li>
             <li class="title-visual-foto__list">
               <div class="title-visual-foto__about">
-                <img
+                <img srcset="./images/img-box-2@2x.jpg"
                   src="./images/img-box-2.jpg"
                   alt="мобільні версії на екрані лептопу"
                   width="370"
@@ -185,7 +188,8 @@
             </li>
             <li class="title-visual-foto__list">
               <div class="title-visual-foto__about">
-                <img src="./images/img-box-3.jpg" alt="дизайн проекту на лептопі" width="370" />
+                <img srcset="./images/img-box-3@2x.jpg"
+                src="./images/img-box-3.jpg" alt="дизайн проекту на лептопі" width="370" />
                 <p class="title-visual-foto__overlay">Дизайнерські рішення</p>
               </div>
             </li>
@@ -197,7 +201,15 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team">
             <li class="employees">
-              <img src="./images/foto-1.jpg" alt="фото Ігора Дем'яненко" width="270" height="260" />
+<picture>
+  <source srcset="./images/foto-1.webp 1x, ./images/foto-1@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+  <source srcset="./images/foto-1.jpg 1x, ./images/foto-1@2x.jpg 2x" media="min-width: 1200px">
+  <source srcset="./images/tablet_img/foto-1.webp 1x, ./images/tablet_img/foto-1@2x.webp 2x" media="min-width: 768px" type="image/webp">
+  <source srcset="./images/tablet_img/foto-1.jpg 1x, ./images/tablet_img/foto-1@2x.jpg 2x" media="min-width: 768px">
+  <source srcset="./images/mobile_img/foto-1-mob.webp 1x, ./images/mobile_img/foto-1-mob@2x.webp 2x" media="max-width: 767px" type="image/webp">
+  <source srcset="./images/mobile_img/foto-1-mob.jpg 1x, ./images/mobile_img/foto-1-mob@2x.jpg 2x " media="max-width: 767px">
+              <img src="./images/foto-1.jpg" alt="фото Ігора Дем'яненко" class="employees__foto"/>
+</picture>
               <div class="about-position">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p class="job-position" lang="en">Product Designer</p>
@@ -254,7 +266,15 @@
               </div>
             </li>
             <li class="employees">
-              <img src="./images/foto-2.jpg" alt="фото Ольги Рєпіной" width="270" height="260" />
+              <picture>
+                 <source srcset="./images/foto-2.webp 1x, ./images/foto-2@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+  <source srcset="./images/foto-2.jpg 1x, ./images/foto-2@2x.jpg 2x" media="min-width: 1200px">
+  <source srcset="./images/tablet_img/foto-2.webp 1x, ./images/tablet_img/foto-2@2x.webp 2x" media="min-width: 768px" type="image/webp">
+  <source srcset="./images/tablet_img/foto-2.jpg 1x, ./images/tablet_img/foto-2@2x.jpg 2x" media="min-width: 768px">
+  <source srcset="./images/mobile_img/foto-2-mob.webp 1x, ./images/mobile_img/foto-2-mob@2x.webp 2x" media="max-width: 767px" type="image/webp">
+  <source srcset="./images/mobile_img/foto-2-mob.jpg 1x, ./images/mobile_img/foto-2-mob@2x.jpg 2x " media="max-width: 767px">
+              <img src="./images/foto-2.jpg" alt="фото Ольги Рєпіной" class="employees__foto" />
+              </picture>
               <div class="about-position">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p class="job-position" lang="en">Frontend Developer</p>
@@ -310,8 +330,16 @@
                 </ul>
               </div>
             </li> -->
-            <!-- <li class="employees">
-              <img src="./images/foto-3.jpg" alt="фото Миколи Тарасова" width="270" height="260" />
+            <li class="employees">
+              <picture>
+                 <source srcset="./images/foto-3.webp 1x, ./images/foto-3@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+  <source srcset="./images/foto-3.jpg 1x, ./images/foto-3@2x.jpg 2x" media="min-width: 1200px">
+  <source srcset="./images/tablet_img/foto-3.webp 1x, ./images/tablet_img/foto-3@2x.webp 2x" media="min-width: 768px" type="image/webp">
+  <source srcset="./images/tablet_img/foto-3.jpg 1x, ./images/tablet_img/foto-3@2x.jpg 2x" media="min-width: 768px">
+  <source srcset="./images/mobile_img/foto-3-mob.webp 1x, ./images/mobile_img/foto-3-mob@2x.webp 2x" media="max-width: 767px" type="image/webp">
+  <source srcset="./images/mobile_img/foto-3-mob.jpg 1x, ./images/mobile_img/foto-3-mob@2x.jpg 2x " media="max-width: 767px">
+              <img src="./images/foto-3.jpg" alt="фото Миколи Тарасова" class="employees__foto" />
+              </picture>
               <div class="about-position">
                 <h3 class="team-name">Микола Тарасов</h3>
                 <p class="job-position" lang="en">Marketing</p>
@@ -368,7 +396,15 @@
               </div>
             </li>
             <li class="employees">
-              <img src="./images/foto-4.jpg" alt="фото Михайла Єрмакова" width="270" height="260" />
+<picture>
+   <source srcset="./images/foto-4.webp 1x, ./images/foto-4@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+  <source srcset="./images/foto-4.jpg 1x, ./images/foto-4@2x.jpg 2x" media="min-width: 1200px">
+  <source srcset="./images/tablet_img/foto-4.webp 1x, ./images/tablet_img/foto-4@2x.webp 2x" media="min-width: 768px" type="image/webp">
+  <source srcset="./images/tablet_img/foto-4.jpg 1x, ./images/tablet_img/foto-4@2x.jpg 2x" media="min-width: 768px">
+  <source srcset="./images/mobile_img/foto-4-mob.webp 1x, ./images/mobile_img/foto-4-mob@2x.webp 2x" media="max-width: 767px" type="image/webp">
+  <source srcset="./images/mobile_img/foto-4-mob.jpg 1x, ./images/mobile_img/foto-4-mob@2x.jpg 2x " media="max-width: 767px">
+              <img src="./images/foto-4.jpg" alt="фото Михайла Єрмакова" class="employees__foto" />
+              </picture>
               <div class="about-position">
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p class="job-position" lang="en">UI Designer</p>
@@ -427,7 +463,7 @@
           </ul>
         </div>
       </section>
-      <section class="content-section">
+      <!-- <section class="content-section">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="client">

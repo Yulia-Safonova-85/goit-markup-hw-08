@@ -1,20 +1,48 @@
 .team-list {
     background-color: var(--secondary-background-color);
-
 }
 
 .team {
     display: flex;
     gap: 30px;
-}
+    }
+
+          @media screen and (max-width: 767px) {
+            .team {
+                display: block;
+          }
+                  .employees:not(:last-child) {
+                    margin-bottom: 30px;
+                  }
+        }
 
 .employees {
-    flex-basis: calc((100% - 90px)/4);
+    
     background: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px)/2);
+    }
+        @media screen and (min-width: 1200px){
+            flex-basis: calc((100% - 90px)/4);
+        }
 }
 
+.employees__foto {
+    width: 450px;
+    height: 460px;
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+    @media  screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
+}
 .about-position {
     padding-top: 30px;
     padding-bottom: 30px;

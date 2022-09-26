@@ -15,3 +15,10 @@
     text-transform: uppercase;
 
 }
+
+@media screen and (max-width: 767px) {
+    .title-items {
+        margin-bottom: 10px;
+        text-align:  center;
+    }
+}
