@@ -1,46 +1,39 @@
-// @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
    
-//     .social-list {
-//         display: flex;
-//         justify-content: flex-start;
-//         margin-top: 64px;
-//     }
+    .social-list {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 64px;
+    }
+ 
+        .social-list__item:not(:last-child) {
+          border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-//         .social-list__link {
-//                     padding-left: 10px;
-//                     padding-right: 10px;
-//                     font-weight: 500;
-//                     font-size: 18px;
-//                     line-height: 1.22;
-//                     letter-spacing: 0.02em;
-//                     color: #2196F3;
-    
-//                     &:hover,
-//                     &:focus {
-//                         text-decoration: underline;
-//                     }
-//                 }     
-
-//         .social-list__item:not(:last-child) {
-//           border-right: 1px solid rgba(33, 33, 33, 0.2);
-
-//                 &:hover,
-//                 &:focus { 
-//                   border-right: var(--accent-color)
-//                   }
-//          }
-// }
+                &:hover,
+                &:focus { 
+                  border-right: var(--accent-color)
+                  }
+         }
+                 .social-list__link {
+                     padding-left: 10px;
+                     padding-right: 10px;
+                     font-weight: 500;
+                     font-size: 18px;
+                     line-height: 1.22;
+                     letter-spacing: 0.02em;
+                     color: #2196F3;
+        
+                     &:hover,
+                     &:focus {
+                         text-decoration: underline;
+                     }
+                 }
+}
 
 .social-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
-
-    @media screen and (max-width: 767px) {
-        justify-content: flex-start;
-        margin-top: 64px;
-    }
-
 }
 
 .social-list__icon {
@@ -67,15 +60,6 @@
             background-color: var(--accent-color);
         }
 
-        @media screen and (max-width: 767px) {
-            padding-left: 10px;
-            padding-right: 10px;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 1.22;
-            letter-spacing: 0.02em;
-            color: #2196F3;
-            }
 }
 .social-list__social-list__icon_fill_white {
 fill: var(--primary-background-color);

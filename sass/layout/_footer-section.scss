@@ -1,7 +1,3 @@
-.footer-content {
-    display: flex;
-    align-items: baseline;
-}
 
 @media screen and (max-width: 767px) {
 .footer-content {
@@ -9,10 +5,76 @@
         text-align: center;
     }
 
+    .footer-join-section {
+        margin-top: 60px;
+    }
+
     .footer-submit-section {
         margin-top: 60px;
     }
 }
+
+@media screen and (min-width: 768px){
+    .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+            row-gap: 60px;
+          
+        }
+
+                .footer-adress-tablet {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                 }
+
+        .footer-submit-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+        .footer-join-section-tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .footer-submit-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+            } 
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-content {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+
+    }
+
+        .footer-submit-section {
+            margin-left: auto;
+        }
+        .footer-join-section {
+            display: block;
+            margin-left: 70px;
+        }
+
+        .footer-adress-tablet {
+            display: block;
+        }
+    .footer-submit-form {
+        display: block;
+    }    
+}
+
 
 .footer-contact__adress {
     line-height: 1.7;
@@ -33,11 +95,6 @@
     color: var(--accent-color);
 }
 
-.section-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .footer-contact:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -46,21 +103,8 @@
     color: var(--primary-background-color);
 }
 
-.footer-join-section {
-    margin-left: 70px;
-
-    @media screen and (max-width: 767px) {
-        margin-left: 0;
-        margin-top: 60px;
-    }
-}
-
 .section-footer {
     background-color: $bgcolorFooter;
-}
-
-.footer-submit-section {
-    margin-left: auto;  
 }
 
 .submit-form {
