@@ -2,10 +2,28 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
-.client-list {
+@media screen and (max-width: 767px) {
+    .client {
+    flex-wrap: wrap;
+    }
+    .client-list {
+         flex-basis: calc((100% - 30px)/2);
+        }
+}
+
+ @media screen and (min-width: 768px) {
+    .client-list {
+        flex-basis: calc((100% - 60px)/3);
+ }
+ }
+
+@media screen and (min-width: 1200px) {
+   .client-list {
     flex-basis: calc((100% - 150px)/6);
+} 
 }
 
 .client-list-link {

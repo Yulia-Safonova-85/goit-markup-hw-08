@@ -5,6 +5,7 @@
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
 }
 
 .title-items {
@@ -17,8 +18,13 @@
 }
 
 @media screen and (max-width: 767px) {
-    .title-items {
+    .advantages-items__title {
         margin-bottom: 10px;
         text-align:  center;
+    }
+    .title {
+    margin-bottom: 30px;
+    
+    font-size: 28px;
     }
 }

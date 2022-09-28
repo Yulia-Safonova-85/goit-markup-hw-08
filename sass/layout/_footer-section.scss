@@ -1,3 +1,19 @@
+.footer-content {
+    display: flex;
+    align-items: baseline;
+}
+
+@media screen and (max-width: 767px) {
+.footer-content {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-submit-section {
+        margin-top: 60px;
+    }
+}
+
 .footer-contact__adress {
     line-height: 1.7;
     color: var(--primary-background-color)
@@ -32,20 +48,19 @@
 
 .footer-join-section {
     margin-left: 70px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: 0;
+        margin-top: 60px;
+    }
 }
 
 .section-footer {
     background-color: $bgcolorFooter;
 }
 
-.footer-content {
-    display: flex;
-    align-items: baseline;
-
-}
-
 .footer-submit-section {
-    margin-left: auto;
+    margin-left: auto;  
 }
 
 .submit-form {
@@ -65,6 +80,10 @@
         outline: none;
         border-color: var(--accent-color);
         }
+@media screen and (max-width: 767px) {
+    width: 450px;
+}
+
 }
 
 .submit-btn {
@@ -88,6 +107,11 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             background-color: #188CE8;
             }
+@media screen and (max-width: 767px) {
+    margin-top: 20px;
+    margin-left: 0;
+}
+
 }
 
 .submit-icon {
