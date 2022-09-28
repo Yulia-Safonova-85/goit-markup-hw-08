@@ -1,3 +1,12 @@
+@media screen and (max-width:767px) {
+    .btn-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        row-gap: 15px;
+
+}
+}
 .btn-menu {
     @extend %display;
     margin-bottom: 50px;

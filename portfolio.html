@@ -17,18 +17,14 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header-container">
+      <div class="container page-header__container">
         <nav class="site-nav">
           <a href="/index.html" class="logo logo--site-nav">
             <span class="logo__color">Web</span>Studio</a
           >
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-list__link">Студія</a></li>
-            <li>
-              <a href="./portfolio.html" class="nav-list__link nav-list__link--current"
-                >Портфоліо</a
-              >
-            </li>
+            <li><a href="./index.html" class="nav-list__link ">Студія</a></li>
+            <li><a href="./portfolio.html" class="nav-list__link nav-list__link--current">Портфоліо</a></li>
             <li><a href="" class="nav-list__link">Контакти</a></li>
           </ul>
         </nav>
@@ -50,6 +46,59 @@
             >
           </li>
         </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__cls-btn" data-menu-close>
+            <svg class="mobile-menu__cls-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav-list">
+            <li><a href="" class="nav-list__link nav-list__link--current">Студія</a></li>
+            <li><a href="./portfolio.html" class="nav-list__link">Портфоліо</a></li>
+            <li><a href="" class="nav-list__link">Контакти</a></li>
+          </ul>
+          <Div class="mobile-menu-contact">
+          <ul class="contacts mobile-menu__contacts">
+          <li class="contacts__list">
+            <a class="contacts__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+          </li>
+          <li class="contacts__list">
+            <a class="contacts__link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">
+                Instagram
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">
+                Twitter
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">
+               Facebook
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+          </Div>
+        </div>
       </div>
     </header>
     <main>
@@ -71,7 +120,12 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
-                  <img src="./images/Portfolio/portfolio-1.jpg" alt="фото команди" width="370" />
+<picture>
+  <source srcset="./images/Portfolio/portfolio-1.jpg 1x, ./images/Portfolio/portfolio-1@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-1.jpg 1x, ./images/tablet_img/portfolio-1@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-1.jpg 1x, ./images/mobile_img/portfolio-1@2x.jpg 2x" media="(max-width: 767px)">
+                  <img src="./images/Portfolio/portfolio-1.jpg" alt="фото команди" class="portfolio-img"/>
+</picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -87,11 +141,16 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
+                  <picture>
+                    <source srcset="./images/Portfolio/portfolio-2.jpg 1x, ./images/Portfolio/portfolio-2@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-2.jpg 1x, ./images/tablet_img/portfolio-2@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-2.jpg 1x, ./images/mobile_img/portfolio-2@2x.jpg 2x" media="(max-width: 767px)">
                   <img
                     src="./images/Portfolio/portfolio-2.jpg"
                     alt="постер баскетболістів"
-                    width="370"
+                  class="portfolio-img"
                   />
+                </picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -107,7 +166,12 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
-                  <img src="./images/Portfolio/portfolio-3.jpg" alt="лого ресторану" width="370" />
+                  <picture>
+                    <source srcset="./images/Portfolio/portfolio-3.jpg 1x, ./images/Portfolio/portfolio-3@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-3.jpg 1x, ./images/tablet_img/portfolio-3@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-3.jpg 1x, ./images/mobile_img/portfolio-3@2x.jpg 2x" media="(max-width: 767px)">
+                  <img src="./images/Portfolio/portfolio-3.jpg" alt="лого ресторану" class="portfolio-img"/>
+                  </picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -123,7 +187,12 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
-                  <img src="./images/Portfolio/portfolio-4.jpg" alt="фото навушників" width="370" />
+<picture>
+  <source srcset="./images/Portfolio/portfolio-4.jpg 1x, ./images/Portfolio/portfolio-4@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-4.jpg 1x, ./images/tablet_img/portfolio-4@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-4.jpg 1x, ./images/mobile_img/portfolio-4@2x.jpg 2x" media="(max-width: 767px)">
+                  <img src="./images/Portfolio/portfolio-4.jpg" alt="фото навушників" class="portfolio-img"/>
+                  </picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -139,7 +208,12 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
-                  <img src="./images/Portfolio/portfolio-5.jpg" alt="упаковка" width="370" />
+                  <picture>
+                    <source srcset="./images/Portfolio/portfolio-5.jpg 1x, ./images/Portfolio/portfolio-5@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-5.jpg 1x, ./images/tablet_img/portfolio-5@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-5.jpg 1x, ./images/mobile_img/portfolio-5@2x.jpg 2x" media="(max-width: 767px)">
+                  <img src="./images/Portfolio/portfolio-5.jpg" alt="упаковка" class="portfolio-img"/>
+                  </picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -155,11 +229,15 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
+                  <picture>
+                    <source srcset="./images/Portfolio/portfolio-6.jpg 1x, ./images/Portfolio/portfolio-6@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-6.jpg 1x, ./images/tablet_img/portfolio-6@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-6.jpg 1x, ./images/mobile_img/portfolio-6@2x.jpg 2x" media="(max-width: 767px)">
                   <img
                     src="./images/Portfolio/portfolio-6.jpg"
                     alt="фото екрану компютера"
-                    width="370"
-                  />
+                    class="portfolio-img"
+                  /></picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -175,7 +253,12 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
-                  <img src="./images/Portfolio/portfolio-7.jpg" alt="фото видання" width="370" />
+<picture>
+  <source srcset="./images/Portfolio/portfolio-7.jpg 1x, ./images/Portfolio/portfolio-7@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-7.jpg 1x, ./images/tablet_img/portfolio-7@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-7.jpg 1x, ./images/mobile_img/portfolio-7@2x.jpg 2x" media="(max-width: 767px)">
+                  <img src="./images/Portfolio/portfolio-7.jpg" alt="фото видання" class="portfolio-img"/>
+</picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -191,7 +274,12 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
-                  <img src="./images/Portfolio/portfolio-8.jpg" alt="фото лейба" width="370" />
+<picture>
+  <source srcset="./images/Portfolio/portfolio-8.jpg 1x, ./images/Portfolio/portfolio-8@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-8.jpg 1x, ./images/tablet_img/portfolio-8@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-8.jpg 1x, ./images/mobile_img/portfolio-8@2x.jpg 2x" media="(max-width: 767px)">
+                  <img src="./images/Portfolio/portfolio-8.jpg" alt="фото лейба" class="portfolio-img"/>
+</picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -207,11 +295,15 @@
             <li class="menu-icon">
               <a href="" class="menu-icon-link">
                 <div class="icon-link-wrapper">
+                  <picture>
+                    <source srcset="./images/Portfolio/portfolio-9.jpg 1x, ./images/Portfolio/portfolio-9@2x.jpg 2x" media="(min-width: 1200px)">
+  <source srcset="./images/tablet_img/portfolio-9.jpg 1x, ./images/tablet_img/portfolio-9@2x.jpg 2x" media="(min-width: 768px)">
+  <source srcset="./images/mobile_img/portfolio-9.jpg 1x, ./images/mobile_img/portfolio-9@2x.jpg 2x" media="(max-width: 767px)">
                   <img
                     src="./images/Portfolio/portfolio-9.jpg"
                     alt="робота на лептопі"
-                    width="370"
-                  />
+                  class="portfolio-img"
+                  /></picture>
                   <p class="overlay">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et at
                     voluptates fuga magni soluta eos eius nobis ad cupiditate quos ipsa ullam saepe
@@ -230,7 +322,7 @@
     </main>
     <footer class="section-footer">
       <div class="container footer-content">
-        <div>
+        <div class="footer-adress-tablet">
           <a href="" class="logo logo--footer">
             <span class="logo__color">Web</span><span class="logo__second-footer">Studio</span>
           </a>
@@ -258,7 +350,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-join-section">
+        <div class="footer-join-section footer-join-section-tablet">
           <h3 class="title-items title-dark-theme">приєднуйтесь</h3>
           <ul class="social-list footer-social-list">
             <li class="social-list__item">
@@ -314,7 +406,7 @@
         </div>
         <div class="footer-submit-section">
           <h3 class="title-items title-dark-theme">Підпишіться на розсилку</h3>
-          <form>
+          <form class="footer-submit-form">
             <input type="email" class="submit-form" name="email" placeholder="E-mail" required />
             <button type="submit" class="submit-btn">
               Підписатися

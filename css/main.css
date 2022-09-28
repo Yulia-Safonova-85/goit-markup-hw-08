@@ -159,8 +159,8 @@ body {
     display: none;
   }
   .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .page-header__container {
     display: flex;
@@ -608,19 +608,34 @@ body {
   margin-left: 10px;
 }
 
-.icon {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (max-width: 767px) {
+  .icon {
+    display: block;
+  }
+  .menu-icon:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-
-.menu-icon {
-  flex-basis: calc((100% - 60px) / 3);
-  background: var(--primary-background-color);
+@media screen and (min-width: 768px) {
+  .icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .menu-icon {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .menu-icon {
+    flex-basis: calc((100% - 60px) / 3);
+    background: var(--primary-background-color);
+  }
+}
 .menu-icon-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-duration-func);
 }
 .menu-icon-link:hover, .menu-icon-link:focus {
@@ -629,6 +644,7 @@ body {
 
 .about-icon {
   padding: 20px 24px;
+  flex-grow: 1;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
@@ -654,6 +670,20 @@ body {
 }
 .menu-icon-link:hover .overlay, .menu-icon-link:focus .overlay {
   transform: translateY(0%);
+}
+
+.portfolio-img {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-img {
+    width: 370px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -794,7 +824,7 @@ body {
     position: absolute;
     content: "";
     left: 0;
-    bottom: -1px;
+    bottom: 0;
     width: 100%;
     height: 4px;
     background: var(--accent-color);
@@ -851,18 +881,18 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  .social-list {
+  .mobile-menu__social-list {
     display: flex;
     justify-content: flex-start;
     margin-top: 64px;
   }
-  .social-list__item:not(:last-child) {
+  .mobile-menu__item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
-  .social-list__item:not(:last-child):hover, .social-list__item:not(:last-child):focus {
+  .mobile-menu__item:not(:last-child):hover, .mobile-menu__item:not(:last-child):focus {
     border-right: var(--accent-color);
   }
-  .social-list__link {
+  .mobile-menu__link {
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 500;
@@ -871,7 +901,7 @@ body {
     letter-spacing: 0.02em;
     color: #2196F3;
   }
-  .social-list__link:hover, .social-list__link:focus {
+  .mobile-menu__link:hover, .mobile-menu__link:focus {
     text-decoration: underline;
   }
 }
@@ -959,13 +989,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   background-color: var(--primary-background-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -1122,16 +1157,21 @@ body {
 .checkbox-text-agree {
   align-self: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-text-agree {
+    font-size: 14px;
+  }
 }
 
 .agreement {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 2;
   letter-spacing: 0.03em;
   color: rgb(33, 150, 243);
   text-decoration: underline;
@@ -1140,6 +1180,14 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .btn-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
+  }
+}
 .btn-menu {
   margin-bottom: 50px;
 }
