@@ -11,6 +11,7 @@
     .footer-submit-section {
         margin-top: 60px;
     }
+    
 }
 
 @media screen and (min-width: 768px){
@@ -108,7 +109,7 @@
 }
 
 .submit-form {
-    width: 358px;
+    max-width: 358px;
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -125,7 +126,7 @@
         border-color: var(--accent-color);
         }
 @media screen and (max-width: 767px) {
-    width: 450px;
+    width: 100%;
 }
 
 }
