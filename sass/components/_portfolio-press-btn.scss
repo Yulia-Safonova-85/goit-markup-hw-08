@@ -4,12 +4,21 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         row-gap: 15px;
+        margin-bottom: 40px;
 
 }
 }
+
 .btn-menu {
     @extend %display;
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 30px;
+    }
+    
+    @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+}
 }
 
 .press-btn-menu {

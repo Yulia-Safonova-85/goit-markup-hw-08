@@ -8,6 +8,7 @@
 .modal-form {
     display: flex;
     flex-direction: column;
+ 
 }
 
 .modal-form-field-area {
@@ -77,12 +78,14 @@
 
 
 .modal-checkbox-icon {
+    flex-shrink: 0;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 7px;
     margin-left: 7px;
+
 
     .modal-form-checkbox:checked+ & {
             background-color: var(--accent-color);
@@ -135,7 +138,10 @@
             background-color: #188CE8;
         }
 }
-
+.checkbox-agree {
+    width: 100%;
+    max-width: 450px;
+}
 
 
 .checkbox-text-agree {

@@ -1,11 +1,16 @@
 .title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
 
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+        
+            font-size: 36px;
+    }
 }
 
 .title-items {
@@ -21,10 +26,5 @@
     .advantages-items__title {
         margin-bottom: 10px;
         text-align:  center;
-    }
-    .title {
-    margin-bottom: 30px;
-    
-    font-size: 28px;
     }
 }

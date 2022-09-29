@@ -4,6 +4,7 @@
         display: flex;
         justify-content: flex-start;
         margin-top: 64px;
+        flex-wrap: wrap;
     }
  
         .mobile-menu__item:not(:last-child) {

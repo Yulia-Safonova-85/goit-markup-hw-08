@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-no-scroll>
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="site-nav">
@@ -68,13 +68,13 @@
           </ul>
           <Div class="mobile-menu-contact">
           <ul class="contacts mobile-menu__contacts">
-          <li class="contacts__list">
-            <a class="contacts__link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a>
-          </li>
-          <li class="contacts__list">
-            <a class="contacts__link" href="tel:+380961111111">
+           <li class="contacts__list">
+            <a class="contacts__link contacts-link-phone" href="tel:+380961111111">
               +38 096 111 11 11</a>
+          </li> 
+          <li class="contacts__list">
+            <a class="contacts__link contacts-link-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
           </li>
         </ul>
         <ul class="mobile-menu__social-list">
@@ -680,11 +680,12 @@
             <svg class="modal-checkbox-icon">
               <use class="icon-checkbox" href="./images/icons.svg#icon-Vector"></use>
             </svg>
+            <div class="checkbox-agree">
             <span class="checkbox-text-agree">Погоджуюся з розсилкою та приймаю</span> &nbsp;<a
               class="agreement"
               href=""
               >Умови договору</a
-            >
+            > </div>
           </label>
           <button type="submit" class="modal-submit-btn">Відправити</button>
         </form>

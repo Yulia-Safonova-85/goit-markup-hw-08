@@ -1,12 +1,12 @@
 .page-header__container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 
 .page-header {
     align-content: center;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 @media screen and (max-width:767px) {
@@ -27,22 +27,22 @@
     width: 40px;
     height: 40px;
 }
+}
 
- .page-header {
+.page-header {
      padding-top: 16px;
      padding-bottom: 16px;
-    
+
+    @media screen and (min-width:1200px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
  }
-}
 
 @media screen and (min-width: 768px) {
     .open-mobile-menu-btn {
         display: none;
     }
-        .page-header {
-            padding-top: 21px;
-            padding-bottom: 21px;  
-}
 
 .page-header__container {
     display: flex;
