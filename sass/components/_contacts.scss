@@ -57,8 +57,10 @@ width: 100%;
     }
 .contacts__list:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
 }
         .contacts__link {
+            font-size: 14px;
             column-gap: 10px;
         }
 }
